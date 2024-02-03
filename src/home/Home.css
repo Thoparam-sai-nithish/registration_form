@@ -1,0 +1,51 @@
+/* Dark Background Color */
+.home-container {
+    background-color: #1a1a1a;
+    color: #ffffff; /* Text Color */
+    font-family: 'Arial', sans-serif; /* Choose your preferred font-family */
+  }
+  
+  /* Container Styles */
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Dark Header Background Color */
+  .header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Green Header Text Color */
+  .header h1 {
+    color: #00cc66;
+  }
+  
+  /* Dark Section Background Color */
+  .section {
+    background-color: #222222;
+    padding: 20px;
+    margin: 20px 0;
+  }
+  
+  /* Blue Section Text Color */
+  .section h2 {
+    color: #3498db;
+  }
+  
+  /* Green Button Background Color */
+  .button {
+    background-color: #00cc66;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  /* Darker Green on Hover */
+  .button:hover {
+    background-color: #008040;
+  }
