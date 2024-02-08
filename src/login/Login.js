@@ -25,7 +25,10 @@ import { useNavigate } from 'react-router-dom';
             .then((res)=>{
 
                 console.log("Result :", res);
-                if(res.data.success) navigate('/Home')
+                if(res.data.success) {
+                    localStorage.setItem('tokens',res.data.token) 
+                    navigate('/Home')
+                }
                 setLoginErr(res.data.message)
             })
             .catch((err)=>{

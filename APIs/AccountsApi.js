@@ -15,7 +15,7 @@ accountsApp.post('/createAccount',expAsyncHandler(async(req,res)=>{
     const newUser = req.body;
     newUser.email = newUser.email.toLowerCase();
     let doesUserExist = await accountsCollectionObj.findOne({email:newUser.email})
-    if(doesUserExist!==null) res.status(200).send({success:false,message:'User Already Exists'})
+    if(doesUserExist!==null) res.status(200).send({success:false,message:'Email already taken'})
     else{
         const hashedPassword = await bcryptjs.hash(newUser.password,3);
         newUser.password = hashedPassword;
